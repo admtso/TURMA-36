@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title>Cadastro de Cliente</title>
+    <meta charset="utf-8">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 100px;
+            color: darkgray;
+            font-weight: normal;
+        }
+        .formulario {
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .formulario input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 5px 10px;
+            border: 1.5px solid darkgray;
+            border-radius: 3px;
+            outline: none;
+        }
+        .formulario input:focus {
+            border-color: gray;
+        }
+        .formulario button {
+            background-color: darkgray;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 3px;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .formulario button:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Cadastro de Cliente</h1>
+    <div class="formulario">
+        <input type="text" placeholder="Nome">
+        <input type="email" placeholder="Email">
+        <input type="number" placeholder="Idade">
+        <button>Salvar</button>
+    </div>
+</body>
+
+</html>
