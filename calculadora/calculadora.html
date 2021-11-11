@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <div>
+            <input id="numero1" type="number" placeholder="Digite o primeiro número">
+            <input id="numero2" type="number" placeholder="Digite o segundo número">
+            <button onclick="somar()">Somar</button>
+            <button onclick="subtrair()">Subtrair</button>
+            <button onclick="multiplicar()">Multiplicar</button>
+            <button onclick="dividir()">Dividir</button>
+        </div>
+        <script>
+            function somar() {
+                // 1 - acessar o input com id "numero1"
+                let inputNumero1 = document.getElementById("numero1")
+                // 2 - pegar o valor digitado do primeiro input
+                let numero1 = inputNumero1.valueAsNumber
+                // 3 - acessar o input do segundo número
+                let inputNumero2 = document.getElementById("numero2")
+                // 4 - pegar o valor digitado do segundo input
+                let numero2 = inputNumero2.valueAsNumber
+                // 5 - somar os dos números
+                let resultado = numero1 + numero2
+                // 6 - exibir o resultado da soma em um alert
+                alert(resultado)
+            }
+            function subtrair() {
+                let inputNumero1 = document.getElementById("numero1")
+                let numero1 = inputNumero1.valueAsNumber
+                let inputNumero2 = document.getElementById("numero2")
+                let numero2 = inputNumero2.valueAsNumber
+                let resultado = numero1 - numero2
+                alert(resultado)
+            }
+            function multiplicar() {
+                let inputNumero1 = document.getElementById("numero1")
+                let numero1 = inputNumero1.valueAsNumber
+                let inputNumero2 = document.getElementById("numero2")
+                let numero2 = inputNumero2.valueAsNumber
+                let resultado = numero1 * numero2
+                alert(resultado)
+            }
+            function dividir() {
+                let inputNumero1 = document.getElementById("numero1")
+                let numero1 = inputNumero1.valueAsNumber
+                let inputNumero2 = document.getElementById("numero2")
+                let numero2 = inputNumero2.valueAsNumber
+                let resultado =  numero1 / numero2
+                alert(resultado)
+            }
+        </script>
+    </body>
+</html>
