@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Porcentagem</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Quantos por cento?</h1>
+        <input id="numero1" type="number" placeholder="Número 1">
+        <input id="numero2" type="number" placeholder="Número 2">
+        <button onclick="calcular()">Calcular</button>
+        <script>
+            function calcular() {
+                // 1 - pegar o input do número 1
+                let inputNumero1 = document.getElementById("numero1")
+                // 2 - pegar o valor do input número 1
+                let numero1 = inputNumero1.valueAsNumber
+                // 3 - pegar o input do número 2
+                let inputNumero2 = document.getElementById("numero2")
+                // 4 - pegar o valor do input número 2
+                let numero2 = inputNumero2.valueAsNumber
+                // 5 - calcular a porcentagem
+                let resultado = numero1*100/numero2
+                // 6 - exibir a porcentagem no alert
+                alert(numero1 + " é " + resultado + "% de " + numero2)
+            }
+        </script>
+    </body>
+</html>
