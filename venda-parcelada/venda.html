@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda Parcelada</title>
+</head>
+
+<body>
+    <h1>Venda Parcelada</h1>
+    <h2>Informe o valor a ser parcelado</h2>
+    <input id="total" type="number" placeholder="EX: R$ 1000,00">
+    <select id="parcelamento">
+        <option value="">Selecione um parcelamento</option>
+        <option value="10">10 vezes</option>
+        <option value="11">11 vezes</option>
+        <option value="12">12 vezes</option>
+    </select>
+    <button onclick="calcularJuros()">confirmar</button>
+    <script>
+        function calcularJuros() {
+            let total = document.getElementById("total").valueAsNumber
+            let parcelamento = document.getElementById("parcelamento").value
+            let totalComJuros
+            let valorParcela
+
+            switch (parcelamento){  
+                case "10":
+                    totalComJuros = total + (total*1.5/100)
+                    valorParcela = totalComJuros/10
+                    alert(" O total com os juros é de: R$ " + totalComJuros + " sendo 10x de R$ " + valorParcela.toFixed(2))
+                    break
+                case "11":
+                    totalComJuros = total + (total*2.5/100)
+                    valorParcela = totalComJuros/11
+                    alert(" O total com os juros é de: R$ " + totalComJuros + " sendo 11x de R$ " + valorParcela.toFixed(2))
+                    break
+                case "12":
+                    totalComJuros = total + (total*4/100)
+                    valorParcela = totalComJuros/12
+                    alert(" O total com os juros é de: R$ " + totalComJuros + " sendo 12x de R$ " + valorParcela.toFixed(2))
+                    break
+                default:
+                    alert("A opção de parcelamento selecionada é inválida")
+                    break
+            }
+        }
+    </script>
+</body>
+</html>

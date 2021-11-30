@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /*E a configuração do css*/
+        body {
+            background-color: rgb(48, 94, 48);
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        input {
+            text-align: center;
+        }
+
+        div {
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: rgb(162, 173, 132);
+        }
+    </style>
+    <title>Tipos de Triângulo</title>
+</head>
+<div>
+    <h1>Tipos de Triângulo</h1>
+
+    <body>
+        <P>
+        LADO A
+        <input id="ladoA" type="number" placeholder="Informe um Número">
+        </P>
+        LADO B
+        <input id="ladoB" type="number" placeholder="Informe um Número">
+        <P>
+        </P>
+        LADO C
+        <input id="ladoC" type="number" placeholder="Informa um Número">
+
+        <p></p>
+
+        <button onclick="classificacao()">Tipo de Triângulo</button>
+</div>
+<script>
+
+    function classificacao() {
+        let a = document.getElementById("ladoA").valueAsNumber;
+        let b = document.getElementById("ladoB").valueAsNumber;
+        let c = document.getElementById("ladoC").valueAsNumber;
+
+        //Verifica se os campos estão preenchidos//
+        if (document.getElementById("ladoA" && "ladoB" && "ladoC").value == "") {
+            alert("Por favor, Preencha o Campo : ");
+            document.getElementById("ladoA" && "ladoB" && "ladoC").focus();
+            return false
+        }
+        //Verifica o tipo de Triangulo//
+        if (a == b && b == c && a == b) {
+            alert("Equilátero - Todos os lados são iguais")
+        }
+        else if (a != b && b != c && a != c) {
+            alert("Escaleno - Os três lados tem medidas diferentes.")
+        }
+        else {
+            alert("Isósceles - Dois lados com a mesma medida.")
+        }
+
+        //Limpa os Campos//
+        document.getElementById('ladoA').value = ""
+        document.getElementById('ladoB').value = ""
+        document.getElementById('ladoC').value = ""
+
+    }
+</script>
+</body>
+
+</html>
