@@ -1,0 +1,30 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+    <h1>Teste de nacionalidade</h1>
+    Digite o país que você nasceu:<input type="text" name="verificador" id="verificador"/>
+    <input type="button" value="Clique e descubra sua nacionalidade " onclick="verificar()"/>
+    <div id="nacionalidade">Nacionalidade</div>
+
+
+<script>
+ 
+    var verificador = window.document.getElementById('verificador');
+    var nacionalidade = window.document.getElementById('nacionalidade');
+    
+    function verificar() {
+        
+        if (verificador.value == 'brasil' || verificador.value == 'BRASIL' || verificador.value == 'Brasil') {
+            nacionalidade.innerText = 'Você é brasileiro';
+        } else {
+            nacionalidade.innerText = 'Você é estrangeiro';
+        }
+    }
+           
+   </script>
+
+</body>
+</html>
