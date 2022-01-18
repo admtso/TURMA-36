@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas Camisetas</title>
+    <style>
+    body{
+    text-align: center;
+    margin-top: 70px;
+    background-color: rgb(189, 235, 235);
+    font-size: 20px;
+    }
+   
+    button{
+    background-color:rgb(139, 179, 187);
+    border-radius: 5px;
+    }
+   #div1{
+   background-color: rgb(147, 216, 233);
+   margin-left: 400px;
+   margin-right: 400px;
+   border-radius: 10px;
+   }
+
+   h1{
+    background-color:rgb(139, 179, 187);
+
+   }
+
+
+    </style>
+</head>
+<div id="div1">
+<h1>VENDA DE CAMISETAS</h1>
+
+<body>
+    <strong>Camiseta P - R$ - 10,00</strong> <input type="number" id="camisetaP" placeholder="QTD.CAMISETA P"
+        style="text-align: center;">
+    <P></P>
+    <strong>Camiseta M - R$ - 12,00</strong> <input type="number" id="camisetaM" placeholder="QTD.CAMISETA M"
+        style="text-align: center;">
+    <P></P>
+    <strong>Camiseta G - R$ - 15,00</strong> <input type="number" id="camisetaG" placeholder="QTD.CAMISETA G"
+        style="text-align: center;">
+    <P></P>
+
+    <button onclick="total()">CALCULAR TOTAL</button>
+
+    <script>
+        function total() {
+         
+            let camisetaP = document.getElementById("camisetaP").valueAsNumber;
+            let camisetaM = document.getElementById("camisetaM").valueAsNumber;
+            let camisetaG = document.getElementById("camisetaG").valueAsNumber;
+
+            if (document.getElementById("camisetaP" && "camisetaM" && "camisetaG").value == "") {
+            alert("Por favor, Preencha os campos - Caso não escolha algum tamanho preencha com número - 0 (zero) ");
+            document.getElementById("camisetaP" && "camisetaM" && "camisetaG").focus();
+            return false
+
+            }
+
+            let total = ((camisetaP * 10 ) + (camisetaM * 12) + (camisetaG * 15))
+            alert("O valor total é R$ : " + total.toFixed(2) + " Reais ")
+
+           document.getElementById("camisetaP").value="";
+           document.getElementById("camisetaM").value="";
+           document.getElementById("camisetaG").value="";
+
+           
+        }
+    </script>
+</body>
+</div>
+</html>
