@@ -32,6 +32,8 @@ button {
     padding: 18px 20px;
     color: white;
     border-radius: 3px;
+    cursor: pointer;
+    
 }
 
 #lista {
@@ -43,4 +45,13 @@ button {
 
 .item-compra{
     margin-bottom: 20px;
+}
+
+.btn-remover{
+ background-color: transparent;
+ 
+}
+
+.btn-remover img{
+    height: 20px;
 }

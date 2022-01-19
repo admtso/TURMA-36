@@ -21,7 +21,8 @@ function listar() {
   divLista.innerHTML = "" //"zera" a lista para recriá- la
   for(let i = 0; i <lista.length; i++) {
     divLista.innerHTML += `
-    <div class = "item-compras">${lista[i]}<button onclick="removerLinha(${i})">Remover</button></div>
+    <div class = "item-compras">${lista[i]}
+    <button class= "btn-remover" onclick="removerLinha(${i})"><img src="trash-can.png"></button></div>
    `
   }
 }
