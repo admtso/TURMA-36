@@ -1,0 +1,49 @@
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+    text-align: center;
+    margin-top: 80px;
+    color: rgba(6, 40, 56, 0.267);
+}
+input {
+    border: 1px solid gray;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+form {
+    border: 1px solid gray;
+    width: 60%;
+    margin: auto;
+    padding: 60px 80px;
+    border-radius: 3px;
+    background-color: rgba(69, 134, 134, 0.993);
+}
+button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    background-color: rgb(255, 56, 56);
+    color: white;
+    margin-top: 20px;
+}
+section#lista {
+    display: flex;
+    padding: 60px;
+    flex-wrap: wrap;
+}
+section#lista div {
+    width: 200px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    margin: 10px; 
+}
+section#lista div img {
+    width: 100%;
+}
+
+body{
+  background-color: rgb(147, 235, 166);
+}
+
