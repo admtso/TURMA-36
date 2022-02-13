@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+        <script src="script.js"></script>
+        <title>Vendinha</title>
+    </head>
+    <body>
+        <h1>Vendinha</h1>
+        
+        <form class="formulario">
+        <fieldset>
+        <legend>Dados pessoais</legend>
+        <input type="text" placeholder="Nome completo">
+        <input type="email" placeholder="Email">
+        <input type="number" placeholder="CPF">
+         </fieldset>   
+        
+         <fieldset>
+        <legend>Faça sua Compra</legend>
+        <select name="fruta" id="fruta">
+         <option value="" selected>Selcione uma fruta </option>   
+         <option value="Banana">Banana</option>
+         <option value="Maçã">Maçã</option>
+         <option value="Abacate">Abacate</option>
+         <option value="Abacaxi">Abacaxi</option>
+        </select>
+        </fieldset>
+
+        <button type="button" onclick="adicionar()">Adicionar</button>
+        <button type="button" onclick="finalizar()">Finalizar Compra</button>
+    </form>
+
+    </body>
+</html>
