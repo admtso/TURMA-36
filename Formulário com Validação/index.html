@@ -1,0 +1,23 @@
+<html lang="pt-BR">
+
+<head>
+    <title>Cadastro de Cliente</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<h1>FORMULÁRIO DE INSCRIÇÃO</h1>
+
+<body>
+    <form name="formulario" class="formulario">
+        <input  id="nome"  name="nome" type="text" placeholder="Nome Completo">
+        <input  id="email" name="email" type="email" placeholder="Email">
+        <input  id="idade" name="idade" type="number" placeholder="Idade">
+    
+        <p>Pessoa física ou Jurídica?</p>
+        <input name="tipo" type="radio" value="Fisica">Fisica
+        <input name="tipo" type="radio" value="juridica">Jurídica
+        <button type="button" onclick="salvar()">Salvar</button>
+    </form>
+</body>
+</html>
