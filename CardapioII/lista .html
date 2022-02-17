@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Lista Almoço</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h1>Encontre o seu almoço</h1>
+        <form>
+            <input id="inputDescricao" type="text" placeholder="Digite aqui a descrição do prato">
+            <input id="inputValor" type="number" placeholder="Digite aqui o valor do prato">
+            <input id="inputURL" type="text" placeholder="Digite aqui a URL da imagem do prato">
+            <input id="inputEntregaGratis" type="checkbox">
+            <label for="inputEntregaGratis">Entrega grátis</label>
+            <br>
+            <button onclick="cadastrar()" type="button">Adicionar</button>
+        </form>
+
+        <form>
+            <input id="inputFiltro" type="text" placeholder="Digite aqui o texto de busca">
+            <button onclick="filtrar()" type="button">Filtrar</button>
+        </form>
+
+        <section id="lista"></section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
