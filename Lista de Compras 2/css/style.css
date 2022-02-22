@@ -1,0 +1,48 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    
+}
+
+.card{
+    
+    width: 40%;
+    margin: 50px auto;
+    background-color: rgb(235,233,233);
+    padding: 40px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid gray;
+
+}
+
+.card h1{
+    font-weight: 500;
+    color: rgb(88,88,88);
+    
+}
+
+.card div{
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.card input{
+    width: 70%;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgb(235,233,233);
+    text-align: center;
+}
+
+.card button{
+    padding: 8px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    font-weight: 800;
+    color: rgb(88,88,88);
+}
+

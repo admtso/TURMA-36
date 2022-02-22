@@ -1,0 +1,43 @@
+<html lang="pt-BR">
+   <head>
+       <title>Lista de Compras</title>
+       <meta charset="UTF-8">
+       <link rel="stylesheet" href="css/style.css">
+       <script src="js/script.js"></script>
+     <body>
+         <div class="card">
+             <h1>Lista de Compras</h1>
+
+              <div>
+                  <input type="text" placeholder="Insira o item da lista" id="item"/>
+              </div>
+
+              <div>
+                  <button onclick="adicionarItem()">Adicionar</button>
+                  <button onclick="limpar()">Limpar</button>
+              </div>
+             
+              <fieldset>
+              <legend>Remover</legend>
+
+              <div>
+                  <input type="text" placeholder="Nome do Item a remover" id="itemRemover">
+              </div>
+
+              <div>
+                  <button onclick="removerItem()">Remover</button>
+              </div>
+            </div>   
+        </fieldset>
+                       
+              
+               <div class="card">
+              <span id="lista"></span>
+                
+              </div>
+         </div>        
+     </body>
+   </head>
+</html>
+
+
