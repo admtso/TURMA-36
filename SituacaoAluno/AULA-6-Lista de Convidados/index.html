@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scipt.js"></script>
+    <title>Lista de Convidados</title>
+</head>
+<body>
+    <div class="card">
+        <h1>Cadastros de Convidados</h1>
+      
+        <div>
+          <input type="text" placeholder="Nome do Convidado" id="nomeConvidado">
+        </div>
+        
+        <div>
+         <button onclick="inserir()">Inserir</button>
+         <button onclick="limpar()">Cancelar</button>
+        </div>
+
+        <fieldset>
+           <legend>Buscar Nome</legend>
+
+        <div>
+            <input type="text" placeholder="Nome Busca" id="nomeBuscar">
+          </div>
+          
+          <div>
+           <button onclick="buscar()">Buscar</button>
+          </div>
+        </fieldset>
+    </div>
+
+    <div class="card">
+        <h1>Lista de Convidados</h1>
+        <table>
+            <thead>
+                <tr>
+                   <th>Nome do Convidados</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="tabela"></tbody>
+        </table>
+    </div>
+</body>
+</html>
