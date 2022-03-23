@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>Cadastro de Carro</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <h1>Cadastro de Carro</h1>
+
+    <form>
+      <input
+        id="inputBusca"
+        type="search"
+        placeholder="Digite a placa do carro a ser encontrado"
+      />
+      <button id="btnBuscar" type="button">Buscar</button>
+      <br />
+      <br />
+    </form>
+
+    <form>
+      <input
+        id="inputMarca"
+        type="text"
+        placeholder="Digite a marca do carro"
+      />
+      <input
+        id="inputModelo"
+        type="text"
+        placeholder="Digite o modelo do carro"
+      />
+      <input id="inputCor" type="text" placeholder="Digite a cor do carro" />
+      <input
+        id="inputPlaca"
+        type="text"
+        placeholder="Digite a placa do carro"
+      />
+      <button id="btnCadastrar" type="button">Cadastrar</button>
+    </form>
+
+    <h2>Carros cadastrados:</h2>
+    <section id="sectionCarros"></section>
+
+    <script type="module" src="./controller/index.js"></script>
+  </body>
+</html>
