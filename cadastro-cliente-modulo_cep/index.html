@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Cadastro Cliente</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Cadastro de Cliente</h1>
+
+        <form>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <input id="inputNome" type="text" placeholder="Digite o nome">
+                <input id="inputEmail" type="email" placeholder="Digite o email">
+                <input id="inputCpf" type="text" placeholder="Digite o CPF">
+            </fieldset>
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <input id="inputCep" type="text" placeholder="Digite o CEP">
+                <button id="btnBuscar" type="button">Buscar endereço</button>
+                <br>
+                <br>
+            
+                <input id="inputRua" type="text" placeholder="Digite a Rua">
+                <input id="inputBairro" type="text" placeholder="Digite o Bairro">
+                <input id="inputCidade" type="text" placeholder="Digite a Cidade">
+                <input id="inputUf" type="text" placeholder="Digite a UF">
+            </fieldset>
+
+
+            <button id="btnCadastrar" type="button">Cadastrar</button>
+        </form>
+        
+        <section id="listaClientes">
+            <table border="1">
+                <thead>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>CEP</th>
+                    <th>Rua</th>
+                    <th>Bairro</th>
+                    <th>Cidade</th>
+                    <th>UF</th>
+                </thead>
+                <tbody id="tabela"></tbody>
+            </table>
+        </section>
+        
+        <!-- entry point -->
+        <script type="module" src="./controller/index.js"></script> 
+    </body>
+</html>
